@@ -18,7 +18,7 @@ app.use(express.json());
 
 // Route-based Rate Limiting (Recommended)
 app.use('/api/employees', rateLimiter());
-app.use('/api/stats', rateLimiter());
+app.use('/api/stats');
 
 // Routes
 app.use('/api/auth', authRouter);              // Auth
